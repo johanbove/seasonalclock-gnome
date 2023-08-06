@@ -1,3 +1,10 @@
+// @see https://github.com/sgwilym/seasonal-hours-clock/
+
+/**
+ *  This concept originated in [Twodays Crossing](https://github.com/earthstar-project/twodays-crossing), an Earthstar chat app.
+ *  This clock was created by [@cinnamon-bun](https://github.com/cinnamon-bun). We miss you.
+ */
+
 // Any imports this module needs itself must also be imported here
 const ExtensionUtils = imports.misc.extensionUtils;
 const Me = ExtensionUtils.getCurrentExtension();
