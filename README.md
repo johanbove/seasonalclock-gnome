@@ -8,6 +8,9 @@ This concept originated in [Twodays Crossing](https://github.com/earthstar-proje
 
 This is a basic implementation of a "Gnome Shell Extension" that displays the current hour as the Seasonal Hour in the form of its representative emoji.
 
+![Screenshot from 2023-08-06 23-11-30](https://github.com/johanbove/seasonalclock-gnome/assets/922765/fedbf554-1e0b-4d32-91d3-c1c8c999e04f)
+
+
 ## Changelog
 
 ### Version 0.1
