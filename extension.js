@@ -11,6 +11,10 @@ function getSeasonalHour() {
     return seasonalhours.getHourOf();
 }
 
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 class Extension {
     constructor() {
         this._label = null;
@@ -22,19 +26,22 @@ class Extension {
             y_expand: true,
             y_align: Clutter.ActorAlign.CENTER
         });
-        Main.panel._centerBox.insert_child_at_index(this._label, 2);
 
-        log('Setting Seasonal hour');
+        Main.panel._centerBox.insert_child_at_index(this._label, 2);
 
         const updateHour = () => {
             const theHour = getSeasonalHour();
-            this._label.set_text("  " + theHour.emoji + " (" + theHour.shortName + ")  ");
+            if (!theHour || !theHour.emoji || !theHour.shortName) {
+                return;
+            }
+            this._label.set_text("  " + theHour.emoji + " (" + capitalize(theHour.shortName) + ")  ");
         }
 
+        // log('Setting Seasonal hour');
         updateHour();
 
-        this._updateInterval = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 60, () => {
-            log('Updated Seasonal hour');
+        this._updateInterval = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 10, () => {
+            // log('Updated Seasonal hour');
             updateHour();
             return GLib.SOURCE_CONTINUE;
         });
