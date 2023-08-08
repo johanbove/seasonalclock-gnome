@@ -34,7 +34,8 @@ class Extension {
             if (!theHour || !theHour.emoji || !theHour.shortName) {
                 return;
             }
-            this._label.set_text("  " + theHour.emoji + " (" + capitalize(theHour.shortName) + ")  ");
+            // I am not sure how to deal with spacing properly yet so using white-space instead
+            this._label.set_text("  " + theHour.emoji + " " + capitalize(theHour.shortName) + "  ");
         }
 
         // log('Setting Seasonal hour');
