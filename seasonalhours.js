@@ -5,9 +5,6 @@
  *  This clock was created by [@cinnamon-bun](https://github.com/cinnamon-bun). We miss you.
  */
 
-// Any imports this module needs itself must also be imported here
-const ExtensionUtils = imports.misc.extensionUtils;
-const Me = ExtensionUtils.getCurrentExtension();
 
 /*
   Pretend that each 24 hour period is actually an entire year with seasons.

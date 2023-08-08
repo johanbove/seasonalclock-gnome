@@ -41,7 +41,7 @@ class Extension {
         // log('Setting Seasonal hour');
         updateHour();
 
-        this._updateInterval = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 10, () => {
+        this._updateInterval = GLib.timeout_add_seconds(GLib.PRIORITY_LOW, 10, () => {
             // log('Updated Seasonal hour');
             updateHour();
             return GLib.SOURCE_CONTINUE;
