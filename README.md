@@ -2,7 +2,7 @@
 
 Inspired by <https://seasonalclock.org>
 
-This concept originated in [Twodays Crossing](https://github.com/earthstar-project/twodays-crossing), an Earthstar chat app. This clock was created by [@cinnamon-bun](https://github.com/cinnamon-bun). _We miss you._
+This concept originated in [Twodays Crossing](https://github.com/earthstar-project/twodays-crossing), an [Earthstar](https://earthstar-project.org/) chat app. This clock was created by [@cinnamon-bun](https://github.com/cinnamon-bun). _We miss you._
 
 ## About
 
