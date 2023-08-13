@@ -12,7 +12,7 @@ This is a basic implementation of a ["Gnome Shell Extension"](https://extensions
 
 ## Development
 
-Read the [GJS.guide](https://gjs.guide/) 
+Read the [GJS.guide](https://gjs.guide/)
 
 Run a debug instance:
 
@@ -37,12 +37,17 @@ gnome-extensions enable seasonalclock-gnome@johanbove.info
 
 ## Changelog
 
-### Version 0.1.1
+### Version 1.1.1
+
+- Fixed "candle", "ice", "mist" and "mountain" emoji rendering through unicode character.
+- Preparing for Gnome Extensions release.
+
+### Version 1.1
 
 - Changed capitalization
 - Removed parenthesis
 
-### Version 0.1
+### Version 1.0
 
 - Initial release; nothing fancy.
 - Emojis for the hours are based upon [this version](https://github.com/sgwilym/seasonal-hours-clock/blob/064d6a9545aa50f93367ed7f2a27ab4c3fc766dd/src/seasonal-hours.ts).
