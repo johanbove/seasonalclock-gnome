@@ -53,18 +53,16 @@ class Extension {
                 return;
             }
             // Force unicode rendering
-            const theHourAsEmoji = `${theHour.emoji}\uFE0F`;
-            const output = theHourAsEmoji + " " + capitalize(theHour.shortName);
-            console.log('seasonalclock hour', output);
+            const theHourAsEmoji = theHour.emoji + "\uFE0F";
+            const labelText = theHourAsEmoji + " " + capitalize(theHour.shortName);
             // I am not sure how to deal with spacing properly yet so using white-space instead
-            this._label.set_text("  " + output + "  ");
+            this._label.set_text("  " + labelText + "  ");
         }
 
         // log('Setting Seasonal hour');
         updateHour();
 
         this._updateInterval = GLib.timeout_add_seconds(GLib.PRIORITY_LOW, 10, () => {
-            // log('Updated Seasonal hour');
             updateHour();
             return GLib.SOURCE_CONTINUE;
         });
