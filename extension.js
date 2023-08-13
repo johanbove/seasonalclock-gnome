@@ -1,3 +1,21 @@
+/* extension.js
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ */
+
 const { Clutter, St } = imports.gi;
 const Main = imports.ui.main;
 const ExtensionUtils = imports.misc.extensionUtils;
@@ -34,8 +52,12 @@ class Extension {
             if (!theHour || !theHour.emoji || !theHour.shortName) {
                 return;
             }
+            // Force unicode rendering
+            const theHourAsEmoji = `${theHour.emoji}\uFE0F`;
+            const output = theHourAsEmoji + " " + capitalize(theHour.shortName);
+            console.log('seasonalclock hour', output);
             // I am not sure how to deal with spacing properly yet so using white-space instead
-            this._label.set_text("  " + theHour.emoji + " " + capitalize(theHour.shortName) + "  ");
+            this._label.set_text("  " + output + "  ");
         }
 
         // log('Setting Seasonal hour');
