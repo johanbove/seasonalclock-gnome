@@ -35,6 +35,11 @@ Enable the extension:
 gnome-extensions enable seasonalclock-gnome@johanbove.info
 ```
 
+Pack the extension:
+```bash
+gnome-extensions pack seasonal-clock@johanbove.info --extra-source=seasonalhours.js
+``` 
+
 ## Changelog
 
 ### Version 1.1.1
