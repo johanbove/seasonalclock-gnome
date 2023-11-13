@@ -154,7 +154,7 @@ const hourTable = {
   }
 }
 
-function getUtcHour() {
+export function getUtcHour() {
   // Return the current hour of the day in UTC time,
   // including fractional hours.
   // Example: 03:20 --> 3.33333
@@ -165,7 +165,7 @@ function getUtcHour() {
   )
 }
 
-function getHourOf() {
+export function getHourOf() {
   let intHour = Math.floor(getUtcHour())
   return hourTable[intHour]
 }

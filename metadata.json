@@ -3,8 +3,7 @@
   "description": "Displays the current Seasonal Clock hour in the Gnome panel",
   "uuid": "seasonal-clock@johanbove.info",
   "shell-version": [
-    "43",
-    "44"
+    "45"
   ],
   "url": "https://github.com/johanbove/seasonalclock-gnome"
 }

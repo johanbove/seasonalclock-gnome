@@ -22,17 +22,17 @@ dbus-run-session -- gnome-shell --nested --wayland
 
 Install the extension:
 ```bash
-gnome-extensions install seasonalclock-gnome@johanbove.info
+gnome-extensions install seasonal-clock@johanbove.info
 ```
 
 Disable the extension:
 ```bash
-gnome-extensions disable seasonalclock-gnome@johanbove.info
+gnome-extensions disable seasonal-clock@johanbove.info
 ```
 
 Enable the extension:
 ```bash
-gnome-extensions enable seasonalclock-gnome@johanbove.info
+gnome-extensions enable seasonal-clock@johanbove.info
 ```
 
 Pack the extension:
@@ -41,6 +41,10 @@ gnome-extensions pack seasonal-clock@johanbove.info --extra-source=seasonalhours
 ``` 
 
 ## Changelog
+
+### Version 1.1.2
+
+- Added Gnome v45 support
 
 ### Version 1.1.1
 
